@@ -42,7 +42,7 @@ public class ApplicationTest {
 
     @Test
     public void 대출_기능_오류_테스트() throws Exception {
-        String input = "대출 987-89A00456\nN\n";
+        String input = "대출 987-89A02035\nN\n";
         System.setIn(new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8)));
 
         Application.main(new String[]{});
@@ -66,7 +66,7 @@ public class ApplicationTest {
 
     @Test
     public void 반납_기능_정상_테스트() throws Exception {
-        String input = "반납 987-89A02035\nN\n";
+        String input = "반납 987-89A01066\nN\n";
         System.setIn(new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8)));
 
         Application.main(new String[]{});
